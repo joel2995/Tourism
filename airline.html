@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>ARBS</title>
+<head>
+    <title>Advanced Airline Booking</title>
+    <style>
+        <body>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            .form-container {
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 20px;
+                text-align: center;
+            }
+        /* Add your CSS styles here */
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Airline Booking</h1>
+        <div class="form-container">
+            <form id="booking-form">
+                <label for="destination" class="form-label">Destination:</label>
+                <select id="destination" class="form-input">
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Gaya">Gaya</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Rangpuri">Rangpuri</option>
+                    <option value="Dabolim">Dabolim</option>
+                    <option value="Cansarvornem">Cansarvornem</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Badgam">Badgam</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Deoghar">Deoghar</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                    <option value="Calicut">Calicut</option>
+                    <option value="Cochin">Cochin</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Imphal">Imphal</option>
+                    <option value="Bhubaneswar">Bhubaneswar</option>
+                    <option value="Raja Sansi">Raja Sansi</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Tiruchirappall">Tiruchirappall</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Agartala">Agartala</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Babatpur">Babatpur</option>
+                    <option value="Narainpur">Narainpur</option>
+                    <option value="Bagdogra">Bagdogra</option>
+                    <option value="Kolkata">Kolkata</option>
+                    
+                    <!-- Add more destination options here -->
+                </select>
+                <label for="departure" class="form-label">Departure:</label>
+                <select id="departure" class="form-input">
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Tirupati">Tirupati</option>
+<option value="Vijayawada">Vijayawada</option>
+<option value="Guwahati">Guwahati</option>
+<option value="Gaya">Gaya</option>
+<option value="Patna">Patna</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Rangpuri">Rangpuri</option>
+<option value="Dabolim">Dabolim</option>
+<option value="Cansarvornem">Cansarvornem</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Surat">Surat</option>
+<option value="Badgam">Badgam</option>
+<option value="Ranchi">Ranchi</option>
+<option value="Deoghar">Deoghar</option>
+<option value="Bengaluru">Bengaluru</option>
+<option value="Mangaluru">Mangaluru</option>
+<option value="Calicut">Calicut</option>
+<option value="Cochin">Cochin</option>
+<option value="Kannur">Kannur</option>
+<option value="Trivandrum">Trivandrum</option>
+<option value="Indore">Indore</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Pune">Pune</option>
+<option value="Imphal">Imphal</option>
+<option value="Bhubaneswar">Bhubaneswar</option>
+<option value="Raja Sansi">Raja Sansi</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Madurai">Madurai</option>
+<option value="Tiruchirappall">Tiruchirappall</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Agartala">Agartala</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Babatpur">Babatpur</option>
+<option value="Narainpur">Narainpur</option>
+<option value="Bagdogra">Bagdogra</option>
+<option value="Kolkata">Kolkata</option>
+                </select>
+                <label for="date" class="form-label">Date:</label>
+                <input type="date" id="date" class="form-input"><br><br>
+                
+                <label for="passenger-name" class="form-label">Passenger Name:</label>
+                <input type="text" id="passenger-name" class="form-input"><br><br>
+                
+                <label for="passenger-age" class="form-label">Passenger Age:</label>
+                <input type="number" id="passenger-age" class="form-input"><br><br>
+                
+                <label for="seat-selection" class="form-label">Select Seat:</label>
+                <div id="seat-selection" class="seat-selection">
+                    <!-- Seat selection options go here -->
+                </div>
+                
+                <button type="submit" class="form-button">Book Now</button>
+            </form>
+
+
+            <head>
+                <title>Background Image Example</title>
+                <style>
+                    body {
+                        background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    /* Additional CSS styles can be added to your page content */
+                    .content {
+                        padding: 20px;
+                        background-color: rgba(255, 255, 255, 0.8);
+                    }
+                </style>
+            </head>
+        </div>
+    </div>
+</body>
+    
+    <script>
+        // JavaScript can be added here to handle form submission, seat selection, and form validation.
+        const bookingForm = document.getElementById("booking-form");
+
+        // Add seat selection options dynamically
+        const seatSelection = document.getElementById("seat-selection");
+        // Generate seat options here
+
+        bookingForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const destination = document.getElementById("destination").value;
+            const date = document.getElementById("date").value;
+            const passengerName = document.getElementById("passenger-name").value;
+            const passengerAge = document.getElementById("passenger-age").value;
+            const selectedSeat = document.querySelector('input[name="seat"]:checked');
+
+            if (!selectedSeat) {
+                alert("Please select a seat.");
+                return;
+            }
+
+            // You can perform further actions with the form data here, e.g., send it to a server for processing.
+            console.log("Booking Details:");
+            console.log("Destination: " + destination);
+            console.log("Date: " + date);
+            console.log("Passenger Name: " + passengerName);
+            console.log("Passenger Age: " + passengerAge);
+            console.log("Selected Seat: " + selectedSeat.value);
+        });
+    </script>
+</body>
+</html>
